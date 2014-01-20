@@ -43,7 +43,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(271, 83);
+            this.btnClose.Location = new System.Drawing.Point(272, 268);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(190, 83);
+            this.btnStart.Location = new System.Drawing.Point(191, 268);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 2;
@@ -66,14 +66,15 @@
             this.txtMessage.Location = new System.Drawing.Point(13, 40);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(334, 37);
+            this.txtMessage.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtMessage.Size = new System.Drawing.Size(334, 222);
             this.txtMessage.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 118);
+            this.ClientSize = new System.Drawing.Size(359, 303);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnClose);

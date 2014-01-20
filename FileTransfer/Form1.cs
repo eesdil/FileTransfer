@@ -29,7 +29,10 @@ namespace FileTransfer
         void db_IterationComplete(object sender, MySqlDb.IterationEventArgs e)
         {
             string infoFromWorker = e.iterationNumber;
-            txtMessage.Text += e.iterationNumber + " - " + e.name;
+            txtMessage.Text = e.iterationNumber + " - " + e.name + Environment.NewLine + txtMessage.Text;
+            txtMessage.Update();
+            txtMessage.Refresh();
+            Application.DoEvents();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
